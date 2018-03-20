@@ -9,7 +9,7 @@ ENV KM_VERSION=1.3.3.17 \
 ADD start-kafka-manager.sh /kafka-manager-${KM_VERSION}/start-kafka-manager.sh
 
 RUN apt-get update && \
-    apt-get install -y git wget unzip which && \
+    apt-get install -y git wget unzip && \
     mkdir -p /tmp && \
     cd /tmp && \
     git clone https://github.com/yahoo/kafka-manager && \
@@ -20,7 +20,7 @@ RUN apt-get update && \
     unzip  -d / ./target/universal/kafka-manager-${KM_VERSION}.zip && \
     rm -fr /tmp/* /root/.sbt /root/.ivy2 && \
     chmod +x /kafka-manager-${KM_VERSION}/start-kafka-manager.sh && \
-    apt-get remove -y git wget unzip which && \
+    apt-get remove -y git wget unzip && \
     apt-get autoclean
 
 WORKDIR /kafka-manager-${KM_VERSION}
