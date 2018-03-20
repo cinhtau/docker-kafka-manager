@@ -1,8 +1,6 @@
 #!/bin/sh
-# taken from
-# https://github.com/sheepkiller/kafka-manager-docker/blob/master/start-kafka-manager.sh
 
-if [[ $KM_USERNAME != ''  && $KM_PASSWORD != '' ]]; then
+if [ "$KM_USERNAME" != '' -a "$KM_PASSWORD" != '' ]; then
     sed -i.bak '/^basicAuthentication/d' /kafka-manager-${KM_VERSION}/conf/application.conf
     echo 'basicAuthentication.enabled=true' >> /kafka-manager-${KM_VERSION}/conf/application.conf
     echo "basicAuthentication.username=${KM_USERNAME}" >> /kafka-manager-${KM_VERSION}/conf/application.conf
