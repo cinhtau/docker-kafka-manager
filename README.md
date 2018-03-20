@@ -11,5 +11,7 @@ Docker Image for [Kafka Manager by Yahoo](https://github.com/yahoo/kafka-manager
 
 ## Dockerhub
 
+![Build](https://travis-ci.org/cinhtau/docker-kafka-manager.svg?branch=master)
+
 * Build docker image `latest` with [TravisCI](https://travis-ci.org/cinhtau/docker-kafka-manager)
 * Push docker image to dockerhub
