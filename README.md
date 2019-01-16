@@ -15,3 +15,7 @@ Docker Image for [Kafka Manager by Yahoo](https://github.com/yahoo/kafka-manager
 
 * Build docker image `latest` with [TravisCI](https://travis-ci.org/cinhtau/docker-kafka-manager)
 * Push docker image to dockerhub
+
+## Releases
+
+- New release 1.3.3.22 supports now Basic Auth for LDAP support, upgrade to latest Java 8 security fix

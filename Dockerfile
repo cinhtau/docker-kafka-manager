@@ -1,9 +1,9 @@
-FROM openjdk:8u162-jdk-stretch
+FROM openjdk:8-jdk-stretch
 
 Maintainer Tan-Vinh Nguyen <me@cinhtau.net>
 
-ENV KM_VERSION=1.3.3.17 \
-    KM_REVISION=0356db5f2698c36ec676b947c786b8543086dd49 \
+ENV KM_VERSION=${YAHOO_VERSION} \
+    KM_REVISION=${COMMIT_REVISION} \
     KM_CONFIGFILE="conf/application.conf"
 
 ADD start-kafka-manager.sh /kafka-manager-${KM_VERSION}/start-kafka-manager.sh
