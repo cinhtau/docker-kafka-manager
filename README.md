@@ -19,3 +19,7 @@ Docker Image for [Kafka Manager by Yahoo](https://github.com/yahoo/kafka-manager
 ## Releases
 
 - New release 1.3.3.22 supports now Basic Auth for LDAP support, upgrade to latest Java 8 security fix
+- New release 2.0.0.2
+
+## Local Running
+
